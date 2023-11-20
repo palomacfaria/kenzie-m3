@@ -1,0 +1,5 @@
+Conversão de nomes para o componente -> PascalCase
+
+Exemplos de PascalCase:
+App
+MeuNome
