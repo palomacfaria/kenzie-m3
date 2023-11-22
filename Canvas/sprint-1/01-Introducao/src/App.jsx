@@ -1,24 +1,24 @@
 function App() {
   //Javascript
-  const teacher = {
-    name: "Alex",
-    job: "Instrutor React",
-    budget: 15000,
-  }
+const person = {
+  nome: "Paloma",
+  modulo: "M3",
+  idade: "23",
+}
 
-  const saveTeacher = (teacher) => {
-    console.log(teacher);
-  }
+const alertName = () => {
+  alert(person.nome);
+}
 
   //JSX
   return (
-    <div className="App">
-        <h2>{teacher.name}</h2>
-        <span>Cargo: {teacher.job}</span>
-        <span>Salário: {teacher.budget}</span>
-
-        <button onClick={() => saveTeacher(teacher)}>Salvar professor</button>
-    </div>
+    <>
+    <li>
+      <h3>{person.nome} - {person.modulo}</h3>
+      <p>Tenho {person.idade} anos.</p>
+      <button onClick={alertName}>Quem sou eu?</button>
+    </li>
+    </>
   )
 }
 
