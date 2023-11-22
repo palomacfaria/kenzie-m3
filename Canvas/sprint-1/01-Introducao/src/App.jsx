@@ -1,10 +1,14 @@
-import { Component } from "./components/Component";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { SectionAbout } from "./components/SectionAbout";
 
 function App() {
   
   return (
     <div className="App">
-      <Component/>
+      <Header/>
+      <SectionAbout/>
+      <Footer/>
     </div>
   )
 }
