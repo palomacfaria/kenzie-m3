@@ -1,30 +1,34 @@
-import Exemplo from "./components/Exemplo";
-import {Footer} from "./components/Footer";
+import { CategorySection } from "./components/sections/CategorySection";
+import { ProductSection } from "./components/sections/ProductSection";
+
+
 const App = () => {
-  //Arquivos JSX mistura JS com HTML
-  //Tudo que vem antes do retorno da função é lógica JS.
-const name = "Cauan";
-
-//TERNARIO
-//condicional ? retorno verdadeiro : retorno falso
-// ? = IF  : = ELSE
-
-const exibirMensagem = () => {
-  console.log("Você clicou no botão");
-}
-
   return(
-    //Retornos em react geralmente são JSX
     <>
-    <header>Este é o cabeçalho da aplcação</header>
-    <button onClick={exibirMensagem}>Exibir mensagem</button>
-    <div>
-      <h1>Olá mundo!</h1>
-      <p>Eu sou o instrutor:{name}</p>
-      {name === "Cauan" ? <p>O nome do usuário é Cauan</p> : <p>O nome do usuário não é Cauan</p>}
-    </div>
-    <Exemplo/>
-    <Footer />
+      <header>
+        <h1>FASHIONSTORE</h1>
+      </header>
+      <main>
+        <section>
+          <img src="#" alt="#" />
+          <div>
+            <h1>FASHION STORE</h1>
+            <p>Fique por dentro das nossas ultimas promoções</p>
+            <button>CONFIRA NOSSAS OFERTAS</button>
+          </div>
+        </section>
+        <CategorySection/>
+        <ProductSection/>
+        <section>
+          <h2>INSCREVA-SE NA NEWSLETTER</h2>
+          <input type="text" placeholder="E-MAIL"></input>
+          <button>CADASTRE-SE</button>
+        </section>
+      </main>
+      <footer>
+        <p>Todos os direitos reservados - Kenzie Academy Brasil</p>
+      </footer>
+
     </>
   ); 
 }
