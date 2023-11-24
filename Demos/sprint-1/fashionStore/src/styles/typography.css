@@ -1,0 +1,35 @@
+.title1 {
+    color: var(--color-black);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-size: 6.25rem;
+}
+.title2 {
+    color: var(--color-black);
+    font-family: var(--font-primary);
+    font-weight: 500;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+}
+
+.paragraph1{
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+    font-size: 1.1875rem;
+    font-weight: 400;
+}
+.paragraph2{
+    color: var(--color-black);
+    font-family: var(--font-secondary);
+    font-size: 1.1875rem;
+    font-weight: 700;
+}
+.price{
+    color: var(--color-black);
+    font-family: var(--font-primary);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
