@@ -4,9 +4,9 @@ import { categories } from "../../../data.js";
 
 export const CategorySection = () => {
   return (
-    <section>
-      <h2>CATEGORIAS</h2>
-      <ul>
+    <section className="listSectionContainer">
+      <h2 className="title2">CATEGORIAS</h2>
+      <ul className="listSectionContainer__ul">
         {categories.map((el) => (
           <CategoryCard img={el.img} name={el.name} />
         ))}

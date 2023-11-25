@@ -1,6 +1,37 @@
-:root{
+:root {
     --color-black: #000;
     --color-white: #fff;
-    --font-primary: 'Oswald', sans-serif;
-    --font-secondary: 'Roboto', sans-serif;
-}
+    --font-primary: "Oswald", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+  }
+  
+  .container {
+    max-width: 108rem;
+    margin-inline: auto;
+  
+    align-items: center;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 6.25rem;
+  }
+  
+  .listSectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.56rem;
+    width: 100%;
+  }
+  
+  .listSectionContainer__ul {
+    display: flex;
+    text-align: center;
+    gap: 3.81rem;
+  }
+  
+  .listSectionContainer__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.47rem;
+  }

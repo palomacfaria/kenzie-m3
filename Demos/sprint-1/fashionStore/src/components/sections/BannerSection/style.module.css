@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    gap: 3.6rem;
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container__infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

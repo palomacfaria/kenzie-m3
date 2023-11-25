@@ -1,8 +1,8 @@
 export const CategoryCard = ({img, name}) => {
   return (
-    <li>
+    <li className="listSectionContainer__card">
       <img src={img} alt="" />
-      <p>{name}</p>
+      <p className="paragraph2">{name}</p>
     </li>
   );
 };

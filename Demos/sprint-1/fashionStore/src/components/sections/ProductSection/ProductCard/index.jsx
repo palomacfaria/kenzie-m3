@@ -1,9 +1,9 @@
 export const ProductCard = ({img, name, price}) => {
   return (
-    <li>
+    <li className="listSectionContainer__card">
       <img src={img} alt="#" />
-      <p>{name}</p>
-      <p>{price}</p>
+      <p className="paragraph2">{name}</p>
+      <p className="price">{price}</p>
     </li>
   );
 };
