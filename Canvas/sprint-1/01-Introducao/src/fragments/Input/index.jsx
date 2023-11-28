@@ -1,9 +1,8 @@
-export const input = () => {
+export const Input = ({id, type, label}) => {
   return (
     <fieldset>
-      <label htmlFor="">
-        <input type="text" />
-      </label>
+      <label htmlFor={id}>{label}</label>
+        <input type={type} id={id} name={id} />
     </fieldset>
   );
 };
