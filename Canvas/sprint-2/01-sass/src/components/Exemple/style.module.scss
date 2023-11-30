@@ -1,0 +1,23 @@
+/* @mixin flex($gap: 2rem){
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+} */
+
+%flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exempleList{
+    /* @include flex($gap: 4rem); */
+
+    @extend %flex;
+
+    li{
+        border: 1px solid;
+        padding: 2rem;
+        background-color: white;
+    }
+}
