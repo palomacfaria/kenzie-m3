@@ -28,6 +28,17 @@ function App() {
     setNoteList(newNoteList);
   }
 
+  const editNote = (editNote, editingId) => {
+    const newNoteList = noteList.map(note => {
+      if(note.id === editingId){
+        return { ...note, ...editNote}
+      }else{
+        return note;
+      }
+    });
+    setNoteList(newNoteList);
+  }
+
   return (
     <>
       <button onClick={() => addNote({title: "Example 3", text: "Conteúdo de exemplo"})}>Adicionar novo item</button>
@@ -36,6 +47,7 @@ function App() {
           <li key={index}>
           <h3>{note.title}</h3>
           <p>{note.text}</p>
+          <button onClick={() => editNote({title: "Título novo", text: "Texto novo"}, note.id)}>Editar item</button>
           <button onClick={() => removeNote(note.id)}>Remover item</button>
         </li>
         ))}
