@@ -1,0 +1,11 @@
+.useCard{
+    padding: 2rem;
+    border: 1px solid;
+    background-color: rgb(190, 190, 190);
+}
+
+.active{
+    background-color: rgb(58, 5, 107);
+    color: white;
+    border: 1px solid black;
+}
