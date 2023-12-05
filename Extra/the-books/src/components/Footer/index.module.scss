@@ -1,0 +1,17 @@
+.footer{
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10rem;
+    background-color: var(--primary);
+
+    & img{
+        width: 6rem;
+        height: 1.5rem;
+    }
+    & p{
+        font-weight: 700;
+        color: var(--white);
+    }
+}
