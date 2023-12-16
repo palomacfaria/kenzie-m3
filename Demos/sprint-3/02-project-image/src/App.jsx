@@ -1,7 +1,18 @@
-import { HomePage } from "./pages/HomePage"
+import { HomePage } from "./pages/HomePage";
+import { FavoriteModal } from "./components/Modal/FavoriteModal"
+import "./styles/index.scss";
+import { useState } from "react";
 
-export const App = () =>{
-  return(
-    <HomePage/>
-  )
-}
+const App = () => {
+
+  const [isVisible, setVisible] = useState(false)
+
+  return (
+    <>
+      <HomePage setVisible={setVisible}/> 
+      <FavoriteModal />
+    </>
+    )
+};
+
+export default App;

@@ -1,6 +1,6 @@
-import { PhotoCard } from "./PhotoCard";
-import { photoAPI } from "../../services/api";
 import { useState } from "react";
+import { photoAPI } from "../../services/api";
+import { PhotoCard } from "./PhotoCard";
 
 export const PhotoList = () => {
   const [photos, setPhotos] = useState([]);
@@ -8,7 +8,7 @@ export const PhotoList = () => {
   console.log(photos);
 
   const getPhotos = async () => {
-    const { data } = photoAPI.get("/photos");
+    const { data } = await photoAPI.get("/photos");
     setPhotos(data);
   };
 
@@ -16,7 +16,7 @@ export const PhotoList = () => {
     <section>
       <button onClick={getPhotos}>Carregar fotos</button>
       <ul>
-        <PhotoCard img={""} bio={""} />
+        {photos.map(({img, bio}) => <PhotoCard key={id} img={img} bio={bio} />)}
       </ul>
     </section>
   );

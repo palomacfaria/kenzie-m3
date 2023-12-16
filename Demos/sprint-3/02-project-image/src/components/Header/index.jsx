@@ -4,7 +4,7 @@ export const Header = () => {
     return(
         <header>
             <img src={logo} alt="Lexgram logo" />
-            <button>favoritos</button>
+            <button onClick={() => serVisible(true)}>Abrir Modal</button>
         </header>
     )
 }

@@ -1,4 +1,4 @@
-export const PhotoCard = ({ img, bio }) => {
+export const PhotoCard = ({img, bio}) => {
   return (
     <li>
       <img src={img} alt={bio} />

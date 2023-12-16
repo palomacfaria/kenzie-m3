@@ -1,13 +1,15 @@
+import { useState } from "react";
 import { FavoriteCard } from "./FavoriteCard";
 
 export const FavoriteModal = () => {
+
   return (
     <div role="dialog">
       <div>
-        <button>Botão fechar</button>
+        <button>Fechar Modal</button>
       </div>
       <ul>
-        <FavoriteCard />
+        <FavoriteCard setVisible={setVisible}/>
       </ul>
     </div>
   );

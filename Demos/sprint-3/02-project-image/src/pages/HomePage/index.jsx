@@ -1,13 +1,14 @@
 import { Header } from "../../components/Header";
 import { PhotoList } from "../../components/PhotoList";
 
-export const HomePage = () => {
+
+export const HomePage = (setVisible) => {
   return (
     <>
-      <Header />
-      <main>
+      <Header setVisible={setVisible}/>
+      <mian>
         <PhotoList />
-      </main>
+      </mian>
     </>
   );
 };
