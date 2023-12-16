@@ -4,7 +4,7 @@ export const FavoriteModal = () => {
   return (
     <div role="dialog">
       <div>
-        <button>Fechar</button>
+        <button>Botão fechar</button>
       </div>
       <ul>
         <FavoriteCard />
