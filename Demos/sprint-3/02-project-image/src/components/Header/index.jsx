@@ -1,10 +1,10 @@
 import { logo } from "../../assets";
 
-export const Header = () => {
-    return(
-        <header>
-            <img src={logo} alt="Lexgram logo" />
-            <button onClick={() => serVisible(true)}>Abrir Modal</button>
-        </header>
-    )
-}
+export const Header = ({ setVisible }) => {
+  return (
+    <header>
+      <img src={logo} alt="Lexgram logo" />
+      <button onClick={() => setVisible(true)}>Abrir Modal Teste</button>
+    </header>
+  );
+};

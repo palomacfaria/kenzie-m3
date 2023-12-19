@@ -5,12 +5,12 @@ import { useState } from "react";
 
 const App = () => {
 
-  const [isVisible, setVisible] = useState(false)
+  const [isVisible, setVisible] = useState(false);
 
   return (
     <>
       <HomePage setVisible={setVisible}/> 
-      <FavoriteModal />
+      {isVisible ? <FavoriteModal  setVisible={setVisible}/> : null}
     </>
     )
 };
