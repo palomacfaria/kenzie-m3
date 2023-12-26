@@ -1,0 +1,15 @@
+Ciclos de Vida:
+1º Inicialização: Instância nossas variáveis e funções pela primeira vez.
+2º Montagem: Quando o HTML é construido no DOM.
+3º Atualização: Quando o estado desencadeia uma mudança no DOM.
+4º Desmontagem: Quando o HTML é descontruido no DOM.
+
+Efeitos do REACT:
+onMount: executar uma função QUANDO a montagem do componente acontece.
+useEffect( () => {}, []);
+
+onUpdate: executar uma função QUANDO uma atualização acontece.
+useEffect( () => {}, [estado_que_esta_sendo_atualizado]);
+
+onDismont: executar uma função QUANDO a desmontagem acontece.
+useEffect( () => { return () => { } }, []);

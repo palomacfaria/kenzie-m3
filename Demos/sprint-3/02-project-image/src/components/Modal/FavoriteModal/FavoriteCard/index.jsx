@@ -1,9 +1,10 @@
-export const FavoriteCard = ({ img, bio }) => {
+export const FavoriteCard = ({ favorite, removeFavorite }) => {
   return (
     <li>
-      <h2>Modal Aberto</h2>
-      <img src={img} alt={bio} />
-      <button>Botão de fechar</button>
+      <img src={favorite.img} alt={favorite.bio} />
+      <button onClick={() => removeFavorite(favorite.id)}>
+        Remover dos favoritos
+      </button>
     </li>
   );
 };

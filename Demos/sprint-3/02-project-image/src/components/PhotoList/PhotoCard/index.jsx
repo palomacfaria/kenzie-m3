@@ -1,7 +1,7 @@
-export const PhotoCard = ({img, bio}) => {
+export const PhotoCard = ({photo, addFavorite}) => {
   return (
-    <li>
-      <img src={img} alt={bio} />
+    <li onClick={() => addFavorite(photo)}>
+      <img src={photo.img} alt={photo.bio} />
     </li>
   );
 };
