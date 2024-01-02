@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { RoutesMain } from "./routes/RoutesMain";
+import { useState } from "react";
 
 function App() {
+
+  const [isLogin, setIsLogin] = useState(false);
 
   return (
     <div className="App">
@@ -18,7 +21,7 @@ function App() {
           </Link>
         </nav>
       </header>
-      <RoutesMain/>
+      <RoutesMain setIsLogin={setIsLogin}/>
     </div>
   )
 }
