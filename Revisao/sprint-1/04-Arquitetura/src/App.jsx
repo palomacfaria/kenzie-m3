@@ -1,9 +1,9 @@
-import { ContactPage } from "./pages/ContactPage";
+import { ContactForm } from "./components/ContactForm";
 
 function App() {
   return (
     <div className="App">
-      <ContactPage />
+      <ContactForm />
     </div>
   );
 }
